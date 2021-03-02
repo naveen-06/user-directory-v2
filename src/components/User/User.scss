@@ -1,0 +1,41 @@
+@import "../../scss/variables.scss";
+
+.user {
+  width: 100%;
+  overflow: auto;
+
+  display: grid;
+  grid-template-columns: 8% 23% 23% 23% 23%;
+  border-top: 1px solid $color--three;
+  border-left: 1px solid $color--three;
+
+  &:last-child {
+    border-bottom: 1px solid $color--three;
+  }
+
+  .phone,
+  .city,
+  .state,
+  .idx {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-right: 1px solid $color--three;
+    font-size: 0.9rem;
+  }
+
+  .email {
+    align-self: center;
+    padding: 1rem;
+    width: 100%;
+    border-right: 1px solid $color--three;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: $color--four;
+  }
+
+  .city,
+  .state {
+    text-transform: capitalize;
+  }
+}
